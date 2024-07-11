@@ -14,6 +14,12 @@ following: number,
 created: string,
 }
 
+export type GitHubError = {
+    message: string,
+    documentation_url: string,
+    status: string
+}
+
 
 export type GitHubUser = {
 login: string,
@@ -31,8 +37,3 @@ following: number,
 created_at: string,
 }
 
-export type GitHubError = {
-    message: string,
-    documentation_url: string,
-    status: string
-}
