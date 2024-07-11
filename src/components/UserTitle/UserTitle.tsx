@@ -4,13 +4,15 @@ import { LocalGitHubUser } from 'types';
 import styles from './UserTitle.module.scss';
 
 interface UserTitleProps
-  extends Pick<LocalGitHubUser, 'name' | 'login' | 'created'> {}
+  extends Pick<LocalGitHubUser, 'name' | 'login' | 'created' > {}
 
 const localDate = new Intl.DateTimeFormat('en-GB', {
   day: 'numeric',
   month: 'short',
   year: 'numeric',
 });
+
+
 
 export const UserTitle = ({created, login, name}: UserTitleProps) => {
   const joinedDate = localDate.format(new Date(created));
