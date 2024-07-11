@@ -33,8 +33,9 @@ body {
 
   --switcher-color: var(--gray-100);
   --switcher-color-hover: var(--gray-300);
- 
+
   --header-color: var(--gray-300);
+  
 /* ------------------------------------------------ */
   --search-bg: var(--white);
   --search-color: var(--gray-300);

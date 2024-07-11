@@ -11,6 +11,8 @@ import { isGitHubUser } from "utils/typeguards";
 
 const BASE_URL = 'https://api.github.com/users/'
 
+
+
 function App() {
 const [user, setUser] = useState<LocalGitHubUser | null>(defaultUser)
 
